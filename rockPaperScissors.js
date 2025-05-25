@@ -53,4 +53,14 @@ function playRound() {
   }
 } 
 
-console.log(playRound());
+function playGame() {
+  for (let i = 0; i < 5; i++) {
+    console.log(`Round: ${i + 1}`);
+    console.log(playRound());
+  }
+
+  console.log("Game is over")
+  console.log(`Final score: Human: ${humanScore}, Computer: ${computerScore}`)
+}
+
+console.log(playGame());
